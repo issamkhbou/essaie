@@ -1,0 +1,47 @@
+.center {
+  height: 70px;
+  text-align: center;
+  width: 25vh;
+  background: red;
+  display: inline-block;
+}
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.showcase {
+  background: url("/architecture-buildings-city-219692.jpg") no-repeat
+    center/cover;
+  color: white;
+  text-align: center;
+  padding: 0 5rem;
+  font-size: 2rem;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+@media (max-width: 600px) {
+  .showcase {
+    height: 50vh;
+  }
+  .showcase h1 {
+    margin-top: 15vh;
+    font-size: 2rem;
+  }
+  .showcase p {
+    font-size: 1.5rem;
+  }
+  .show {
+    display: none;
+  }
+}
+
+@media (max-height: 450px) {
+  .show {
+    display: none;
+  }
+}

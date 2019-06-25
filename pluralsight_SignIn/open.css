@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  overflow: hidden;
+  background: #181818;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.showcase {
+  flex: 1;
+  background: url("https://image.ibb.co/cO9Lxq/login-bg.jpg") no-repeat center
+    center / cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.showcase p {
+  font-size: 3rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.showcase button {
+  margin: auto;
+  width: 60%;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+.signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+form {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+.logo {
+  margin-bottom: 3.2vh;
+}
+.logo img {
+  width: 300px;
+  margin-top: 50px;
+}
+
+label {
+  font-size: 0.9rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+input {
+  margin-bottom: 0.9rem;
+  width: 100%;
+  border-radius: 2px;
+  background: #181818;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 0.5rem 1.3rem;
+  line-height: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+.links a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-bottom: 0.3rem;
+  line-height: 2rem;
+}
+.or {
+  margin-top: 2rem;
+  display: flex;
+  color: white;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+.or hr {
+  flex: auto;
+  height: 1px;
+}
+.or span {
+  padding: 0 0.8rem;
+}
+
+footer {
+  color: #ccc;
+  margin-top: 3rem;
+  text-align: center;
+  width: 80%;
+  font-size: 0.8rem;
+}
+footer a {
+  text-decoration: underline;
+  color: #f96816;
+}
+.links,
+.or {
+  width: 60%;
+}
+
+.primary-btn {
+  width: 100%;
+  background: #f96816;
+  margin-top: 1.1rem;
+  height: 2.7rem;
+  border-radius: 2px;
+  display: block;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.primary-btn:hover {
+  background-color: #f3803e;
+}
+.or {
+  width: 60%;
+}
+.secondary-btn {
+  width: 60%;
+  color: #ccc;
+  background: none;
+  margin-top: 1.1rem;
+  height: 2.7rem;
+  border-radius: 2px;
+  display: block;
+  border: 2px solid #f4f4f4;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  padding: 0.7rem 0.2rem;
+}
+.secondary-btn:hover {
+  color: #f3803e;
+  border-color: #ff7b39;
+}
+
+@media (min-width: 1270px) {
+  .showcase {
+    flex: 6;
+  }
+
+  .left {
+    flex: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    display: none;
+  }
+  body {
+    overflow: auto;
+  }
+
+  .left {
+    justify-content: start;
+    margin-top: 2vh;
+  }
+  .logo {
+    margin-bottom: 2vh;
+  }
+}
